@@ -21,7 +21,7 @@ module.exports = async function runBridesmaids(page) {
   // =========================
   // 🔍 DETECT ACTIVE TASK (CONTENT-BASED)
   // =========================
-  const isBouquetTask = await page.$('.shine-box.bouquets');
+  const isBouquetTask = await page.$('.gb_bouquet');
   const isSouvenirTask = await page.$('.shine-box.souvenirs');
 
   if (!isBouquetTask && !isSouvenirTask) {
